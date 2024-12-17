@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devendra Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin : 0;
+      padding: 0;
+    }
+body {
+  background-color: rgb(2, 2, 40);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}      
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(16, 16, 57);
+}
+ nav ul{
+    display: flex;
+    justify-content: center;
+ }
+
+ nav ul li{
+  list-style: none;
+  margin: 0 23px;
+ }
+
+ nav ul li a{
+  text-decoration: none;
+  color: white;
+ }
+
+ nav ul li a:hover{
+  color: rgb(153,153,226);
+  font-size: 1.04rem;
+ }
+
+ .left{
+  font-size: 1.5rem;
+ }
+ .firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+ }
+
+ main hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+ }
+
+ .secondSection h1{
+  font-size:1.5rem
+ }
+
+ .firstSection > div{
+    width: 30%;
+ }
+
+ .leftSection{
+  font-size: 2rem;
+ }
+
+ .rightSection img{
+    width: 80%;
+ }
+ .purple{
+  color: rgb(170, 107, 228);
+ }
+
+#element{
+  color: rgb(170, 107, 228);
+}
+.secondSection{
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+.text-gray{
+  color: gray;
+}
+.secondSection .vertical{
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 110px;
+}
+
+.secondSection .box{
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+
+.image-top{
+  width: 23px;
+  position: relative;
+  top: -32px;
+  left:-9px
+}
+
+.vertical-title{
+  position: relative;
+  top: 75px;
+  width: 150px;
+  left: -50px;
+  
+}
+
+.vertical-desc{
+  position: relative;
+  top: 80px;
+  color: gray;
+  width: 150px;
+  font-size: 9px;
+  left: -50px;
+}
+  </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="left">Devendra Portfolio</div>
+        <div class="right"></div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a herf="/">About</a></li>
+          <li><a herf="/">Services</a></li>
+          <li><a herf="/">contact Me</a></li>
+        </ul>
+      </nav>
+    </header>  
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My Name is <span class="purple">Devendra</span>
+          <div>And I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="">
+        </div>
+      </section>
+      <hr>
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far </span>
+        <h1>Projects</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt="">
+            <div class="vertical-title">E-KYC System Using BlockChain</div>
+              <div class="vertical-desc">The project aimed to design and develop a secure, efficient, and transparent E-KYC (Electronic Know Your Customer) system leveraging the decentralized nature of Blockchain. This solution ensures that sensitive customer data remains secure while enabling seamless verification processes across organizations.</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt="">
+            <div class="vertical-title">Tic-Tac-Toe</div>
+              <div class="vertical-desc">The Tic-tac-toe project is a classic game built as an interactive web application using HTML, CSS, and JavaScript.Dynamic Gameplay: Two players take turns to place their symbols (X or O) on a 3x3 grid.
+Winning Logic: The game dynamically checks for win conditions (horizontal, vertical, or diagonal alignment) and declares the winner or a tie if the board is full.</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt="">
+            <div class="vertical-title">student management system</div>
+              <div class="vertical-desc">Designed and developed a web-based Student Management System to streamline student record management. The system provides an intuitive interface for adding, viewing, editing, and deleting student details. Key features include</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt="">
+            <div class="vertical-title">Rock-paper-scissor</div>
+              <div class="vertical-desc">Developed an interactive Rock-Paper-Scissors game as a fun and engaging web-based application. This project demonstrates core programming concepts and frontend development skills. Key features include:</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt="">
+            <div class="vertical-title">CURD Operations</div>
+              <div class="vertical-desc">Developed a web application to demonstrate Create, Read, Update, and Delete (CRUD) operations. The application enables users to manage and manipulate data interactively through a user-friendly interface. Key features include</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed('#element',{
+        strings: ['Python Fullstack Developer', 'React.js','Web Developer'],
+        typespeed: 10,
+      });
+    </script>
+</body>
+</html>
